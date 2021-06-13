@@ -1,0 +1,38 @@
+.order-book {
+  display: flex;
+}
+
+.loading {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  .loader {
+    margin-right: 10px;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    animation: loaderRotator 1.5s linear infinite;
+    &:after {
+      content: "";
+      background-color: #273640;
+      width: 13px;
+      height: 13px;
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+    }
+  }
+}
+@keyframes loaderRotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}

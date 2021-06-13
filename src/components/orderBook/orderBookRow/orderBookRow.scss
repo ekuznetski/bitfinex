@@ -1,0 +1,39 @@
+.order-book {
+  &-row {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    &.asks {
+      flex-direction: row-reverse;
+    }
+    &.header {
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+  }
+  &-cell {
+    &:first-child {
+      text-align: center;
+      width: calc(100vw / 8);
+    }
+    width: calc(100vw / 15);
+    //we also can calculate width based on longest string
+    // but with css we don't need to rerender dom after window resize
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    &.depth {
+      position: absolute;
+      z-index: 0;
+      height: 13px;
+      .bids & {
+        right: 0;
+        background-color: rgba(1, 167, 129, 0.2);
+      }
+      .asks & {
+        left: 0;
+        background-color: rgba(240, 83, 89, 0.2);
+      }
+    }
+  }
+}
