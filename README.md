@@ -1,3 +1,13 @@
+
+This component presents implementation of the order book from Bitfinex - https://trading.bitfinex.com/
+
+
+![image](https://user-images.githubusercontent.com/7822047/162405678-d7657f02-d3e8-42ba-b9eb-37f195a510d8.png)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
